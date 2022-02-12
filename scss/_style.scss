@@ -1,0 +1,147 @@
+body {
+  background-color: $secondarycolor;
+
+  header {
+    background-color: $maincolor;
+    padding: 25px;
+    margin-bottom: 200px;
+
+    .container {
+      max-width: $container-size;
+      width: 100%;
+      margin: 0 auto;
+
+      .logo-dec {
+        a {
+          font-family: $mainfont;
+          font-size: 40px;
+          letter-spacing: 5px;
+          color: $mainfontcolor;
+        }
+      }
+
+      nav,
+      nav > ul {
+        @include flex-props(space-between, center, center);
+      }
+
+      nav {
+        ul {
+          width: 400px;
+          li {
+            a {
+              font-family: $secondaryfont;
+              color: $mainfontcolor;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-1,
+  .section-2 {
+    max-width: $container-size;
+    width: 100%;
+    margin: 0 auto;
+
+    & > h1 {
+      @include section-hedaer-dec;
+    }
+
+    .cards {
+      @include flex-props(space-between, center, center);
+      margin-bottom: 200px;
+
+      img {
+        width: 250px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 32px;
+        color: $secondaryfontcolor;
+        font-family: $mainfont;
+        letter-spacing: 3px;
+      }
+
+      p {
+        color: $mainfontcolor;
+        font-size: 20px;
+        font-family: $secondaryfont;
+      }
+    }
+  }
+
+  .section-2 {
+    h2 {
+      @include section-hedaer-dec;
+    }
+
+    .section-2-wrapper {
+      @include flex-props(space-between, center, center);
+      margin-bottom: 100px;
+
+      img {
+        margin-right: 50px;
+      }
+
+      p {
+        font-family: $secondaryfont;
+        font-size: 40px;
+        color: $mainfontcolor;
+      }
+    }
+  }
+  footer {
+    background-color: $maincolor;
+    padding: 25px;
+
+    .footer-wrapper {
+      @include flex-props(space-between, center, left);
+      max-width: $container-size;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .footer-s-1 {
+      h2 {
+        font-family: $mainfont;
+        color: $secondaryfontcolor;
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: $secondaryfont;
+        color: $mainfontcolor;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+    .footer-s-2 {
+      h3 {
+        font-family: $mainfont;
+        color: $secondaryfontcolor;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      nav {
+        ul {
+          li {
+            margin-bottom: 10px;
+            a {
+              font-family: $mainfont;
+              color: $mainfontcolor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

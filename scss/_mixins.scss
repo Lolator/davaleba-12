@@ -1,0 +1,12 @@
+@mixin flex-props ($justify, $align, $text) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}
+
+@mixin section-hedaer-dec {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
